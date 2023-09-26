@@ -1,27 +1,32 @@
 <!doctype html>
 <html lang="en" class="b-pw-1280 b-reith-sans-font b-reith-serif-font no-js">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://bbc.github.io/gel/static/images/favicon.ico" type="image/x-icon">
 
     <title>Zak Farnworth</title>
-    <!-- Add your og meta tags here as needed -->
+    <meta property="og:title" content="Household Intranet Sites | Getting Started.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bbc.github.io/gel/">
+    <meta property="og:image" content="https://bbc.github.io/gel/static/images/bbc-gel-logo.png">
+    <meta property="og:description" content="Guidance for developers who wish to implement BBC GEL component patterns in ways that follow all BBC accessibility standards.">
+    <meta property="og:locale" content="en_GB">
+    <meta name="version_number" content="1.0">
 
     <script src="https://bbc.github.io/gel/static/js/site.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" href="https://bbc.github.io/gel/static/css/gel.css">
     <link rel="stylesheet" type="text/css" href="https://bbc.github.io/gel/static/css/site.css">
 
-    <script type="text/javascript">
+    <script type="text/javascript"> // feature detects
         document.documentElement.className = document.documentElement.className.replace(' no-js', ' js');
         document.documentElement.className += (' ' + ('ontouchstart' in document.documentElement ? 'touch' : 'no-touch'));
         document.documentElement.className += (' ' + ('flexWrap' in document.documentElement.style ? 'flex' : 'no-flex'));
         document.documentElement.className += (' ' + ((document.createElementNS && 'createSVGRect' in document.createElementNS('http://www.w3.org/2000/svg', 'svg')) ? 'svg' : 'no-svg'));
     </script>
 
-    <script type="text/javascript">
+    <script type="text/javascript"> // download and use Reith font
         try {
             (new FontFaceObserver('ReithSans', 5000)).load().then(function () {
                 document.documentElement.className += ' b-reith-sans-loaded';
@@ -33,6 +38,8 @@
             console.log('Reith fonts did not load within 5 seconds.');
         }
     </script>
+
+    
 </head>
 
 <body class="geltags-body">
@@ -42,47 +49,76 @@
             to content</a>
     </p>
 
-    <div class="gel-layout">
-        <div class="gel-layout__item gel-1/1">
-            <h2>About me</h2>
-            <p>As a student who will be leaving school shortly and just completing exams, I am eager to start my career in the IT industry. I believe that this opportunity would provide me with the ideal environment to develop my skills and gain practical experience. My plan after I leave school is to find a suitable IT apprenticeship as I find that learning in a more hands-on environment is more suited to my learning method as well as the theory side. However, my plan B is to go to a suitable college which offers a course that will take me into the working environment in IT and Network administration.</p>
-            <p>I have an in-depth knowledge of both computer hardware and software, as well as good knowledge and understanding of various IT systems. In addition to my technical skills, I possess personal skills and attributes that are essential in the IT and Network Administration industry.</p>
-            <!-- Add more content as needed -->
+    <header>
+	        <div class="geltags-header gs-u-clearfix">
+            <div class="gel-wrap">
+                <a href="http://www.zakfarnworth.com"><svg aria-label="LOGO" width="100" height="24"
+                        viewBox="0 0 100 24">
+                        <title>Zak Farnworth</title>
+                        <image xlink:href="https://sites.zakfarnworth.com/images/weblogo.png"
+                            src="https://sites.zakfarnworth.com/images/weblogo.png" width="100%" height="100%"></image>
+                    </svg></a>
+            </div>
         </div>
-    </div>
+        <div class="geltags-header__banner gs-u-clearfix">
+            <div class="gel-wrap">
+                <div class="gel-layout">
+                    <div class="gel-layout__item gel-2/5@l"
+                        style="text-align:left; padding-left:13px; margin-bottom:-15px; margin-top: -70px;">
+                        <a href="#" class="geltags-logo"><h2>Personnel Portfolio.</h2> <alt="BBC GEL, global experience language" style="max-width:1px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main" tabindex="-1" class="gel-wrap gs-u-clearfix">
+        <div class="gel-layout">
+            <div class="gel-layout__item gel-1/5@l">
+                <!-- column placeholder-->
+            </div>
+                <h1 class="geltags-header__title">Hello, I'm Zak.</h1>
+        </div>
 
-    <div class="gel-layout">
-        <div class="gel-layout__item gel-1/1">
-            <h2>Official Portraits</h2>
-            <img src="https://images2.imgbox.com/0c/1d/P0keIjna_o.jpg" alt="Zak Farnworth">
-        </div>
-    </div>
+        <div class="gel-layout">
+            <div class="gel-layout__item gel-1/5@l">
+                <nav role="navigation" id="side-nav" class="gel-side-nav sticky" data-sticky-for="900"
+                    style="padding-top:32px">
+                    <div class="gel-pica gs-u-mb gs-u-mt0">Contents</div>
+                    <ol id="geltags-toc__links" class="geltags-toc"><li><a href="#about">About me</a></li><li><a href="#skills">Skills</a></li><li><a href="#workexperiences">Work Experiences</a></li><li><a href="'#contactme">Contact me</a></li></ol>
+                </nav>
+            </div>
 
-    <div class="gel-layout">
-        <div class="gel-layout__item gel-1/1">
-            <h2>Skills</h2>
-            <p>Add your skills here</p>
-        </div>
-    </div>
+               <div class="geltags-sections geltags-body-copy gel-layout__item gel-3/5@l">
+                <h2 id="about">About me</h2>
+			<p>As a student who will be leaving school shortly and just completing exams, I am eager to start my career in the IT industry and I believe that this opportunity would provide me with the ideal environment to develop my skills and gain practical experience. My plan after I leave school is to find a suitable IT apprenticeship as I find that learning in a more on-hands envionment is more suited to my learning method as well as the theory side. However, my plan B is to go to a suitable college which offers a course that will take me into the working environment in IT and Network administration.</p>
+            
+            <p>I have an in-depth knowledge of both computer hardware and software, as well as good knowledge and understanding of Active Directory/Group Policy, DHCP, DNS, Windows Operating Systems, Exchange Email/Outlook, Anti-Virus, Network Cabling/Patching, Helpdesk Experience, File permissions and shares, PC hardware and peripherals such as scanners, USB readers or web cams and Microsoft 365. I also have an understanding of Apple Mobile Device Management (MDM) systems operating for both Apple and Android devices.</p>
+            
+			<p>In addition to my technical skills, I possess personal skills and attributes that are essential in the IT and Network Administration industry, including the ability to work on my own initiative, plan, organise and determine priorities. I have excellent organisational skills with good attention to detail. During a project in which I was involved in preparing a new computer suite and deployment of laptops I had to ensure that the asset list comprising of several pieces of information about devices, were collected to a high level of accuracy, this included, the make, model, MAC Address, intended Computer Account name before I began the image stage of the project. The asset registrations had to take place within 1 working day allowing for the project to move forward as planned. This proactive work ensured that the imaging of devices was smooth, allowing for a successful deployment enhancing the learning in several departments in the academy.</p>
+            
+			<h2 id="officialportraits">Official Portraits</h2>
+            <img src="https://images2.imgbox.com/0c/1d/P0keIjna_o.jpg" alt="MR ZAK T FARNWORTH OFFICIAL PORTRAIT">
 
-    <div class="gel-layout">
-        <div class="gel-layout__item gel-1/1">
-            <h2>About this site</h2>
-            <p>This site was created to showcase my skills and experience in the IT industry. It serves as a platform to access cloud services and various intranets I've developed.</p>
+            <h2 id="skills">Skills</h2>
+            <p></p>
+            <h2 id="about">About this site.</h2>
+            <p>This web page was originally created by the BBC for the developers to use when designing websites that must comply with using GEL. But, now this website has been adapted and heavily changed to be a site used by Zak Farnworth. The purpose of this website is mainly to quickly access cloud services or various intranets created by Zak Farnworth.</p>
+            </div>
         </div>
-    </div>
+    </main>
 
     <div class="geltags-feedback-banner">
         <div class="gel-wrap">
             <div class="gel-layout">
                 <div class="gel-layout__item gel-2/3@l gel-3/5@xl">
-                    <p><small>Copyright &copy; 2023 Zak Farnworth | MMXXIII. This content was previously built by the British Broadcasting Corporation.</small></p>
+                    <p><small>Copyright &copy; 2023 Zak Farnworth | MMXXIII. &copy; British Broadcasting Corporation.
                 </div>
             </div>
         </div>
     </div>
-
+<script> 
     <script type="text/javascript" src="https://bbc.github.io/gel/static/js/gel.js"></script>
+
     <script type="text/javascript">
         new Sticky('.sticky');
     </script>
