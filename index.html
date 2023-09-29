@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" href="https://bbc.github.io/gel/static/css/gel.css">
     <link rel="stylesheet" type="text/css" href="https://bbc.github.io/gel/static/css/site.css">
+    <link rel="stylesheet" type="text/css" href="https://www.zakfarnworth.com/nav.css">
     <script type="text/javascript"> // feature detects
         document.documentElement.className = document.documentElement.className.replace(' no-js', ' js');
         document.documentElement.className += (' ' + ('ontouchstart' in document.documentElement ? 'touch' : 'no-touch'));
@@ -57,15 +58,87 @@
             to content</a>
     </p>
     <header>
-	        <div class="geltags-header gs-u-clearfix">
-            <div class="gel-wrap">
-                <a href="http://www.zakfarnworth.com"><svg aria-label="LOGO" width="100" height="24"
-                        viewBox="0 0 100 24">
-                        <title>Zak Farnworth</title>
-                        <image xlink:href="https://www.zakfarnworth.com/Images/ZakFarnworthLogoOffice.png"
-                            src="https://sites.zakfarnworth.com/images/weblogo.png" width="100%" height="100%"></image>
-                    </svg></a>
-            </div>
+	    <nav>
+      <!--BBC Logo to the far left of the navbar-->
+      <a href="javascript:void(0);" id="BBCImg">
+        <img
+          src="https://www.zakfarnworth.com/Images/ZakFarnworthOfficeLogo.png"
+          alt="ZMG Logo"
+        />
+      </a>
+      <!--Take me back-->
+      <a href="https://www.zakfarnworth.com/" id="nav-sign-in">
+        <i class="fa-solid fa-earth-europe"></i>
+        <div id="nav-sign-in-text">Take me back</div>
+        <div class="nav-line nav-blue"></div>
+      </a>
+	      <!--Main Nav Here. On full width - starts with Home & ends with CBeebies-->
+      <section id="main-nav">
+        <a href="https://www.zakfarnworth.com/" class="main-nav-entry" id="main-nav-home">
+          <div>Home</div>
+          <div class="nav-line nav-blue"></div>
+        </a>
+        <a href="https://www.zakfarnworth.com/#about" class="main-nav-entry" id="main-nav-news">
+          <div>About me</div>
+          <div class="nav-line nav-red"></div>
+        </a>
+        <a
+          href="https://www.zakfarnworth.com/#experiences"
+          class="main-nav-entry"
+          id="main-nav-sport"
+        >
+          <div>Experiences</div>
+          <div class="nav-line nav-yellow"></div>
+        </a>
+        <a
+          href="https://www.zakfarnworth.com/#skills"
+          class="main-nav-entry"
+          id="main-nav-weather"
+        >
+          <div>Skills</div>
+          <div class="nav-line nav-light-blue"></div>
+        </a>
+        <a
+          href="https://www.zakfarnworth.com/#contactinfo"  class="main-nav-entry" id="main-nav-iplayer"
+        >
+          <div>Contact me</div>
+          <div class="nav-line nav-green"></div>
+        </a>
+        <a
+          href="https://www.zakfarnworth.com/downloads.html"
+          class="main-nav-entry"
+          id="main-nav-sounds"
+        >
+          <div>Downloads</div>
+          <div class="nav-line nav-orange"></div>
+        </a>
+        <a href="javascript:void(0);" class="main-nav-entry" id="main-nav-more">
+          <div>More</div>
+          <i class="fas fa-caret-down"></i>
+          <div class="nav-line nav-black"></div>
+        </a>
+      </section>
+      <!--Search-->
+      <a href="javascript:void(0);" id="nav-search">
+        <i class="fas fa-search"></i>
+        <div id="nav-search-text">Search</div>
+        <div class="nav-line nav-black"></div>
+      </a>
+    </nav>
+    <!--Extra drop down that opens up when user clicks on the more tab-->
+    <section id="more-nav">
+      <!--X that user clicks on to close the menu-->
+      <div id="more-nav-content">
+        <div id="cross-icon"><i class="fas fa-times"></i></div>
+        <a href="javascript:void(0);">About me</a>
+        <a href="javascript:void(0);">Experiences</a>
+        <a href="javascript:void(0);">Skills</a>
+        <a href="javascript:void(0);">Work Showcase</a>
+        <a href="javascript:void(0);">Contact me</a>
+        <a href="javascript:void(0);">Downloads</a>
+      </div>
+    </section>
+    <!--END OF NAVBAR-->
         </div>
         <div class="geltags-header__banner gs-u-clearfix">
             <div class="gel-wrap">
@@ -89,7 +162,6 @@
                     style="padding-top:32px">
                     <div class="gel-pica gs-u-mb gs-u-mt0">Contents</div>
                     <ol id="geltags-toc__links" class="geltags-toc"><li><a href="#about">About me</a></li><li><a href="#skills">Skills</a></li><li><a href="#workexperiences">Work Experiences</a></li><li><a href="'#contactme">Contact me</a></li></ol>
-                    <ol id="geltags-toc__links" class="geltags-toc"><li><a href="#about">About me</a></li><li><a href="#skills">Skills</a></li><li><a href="#workexperiences">Work Experiences</a></li><li><a href="#contactme">Contact me</a></li></ol>
                 </nav>
             </div>
                <div class="geltags-sections geltags-body-copy gel-layout__item gel-3/5@l">
