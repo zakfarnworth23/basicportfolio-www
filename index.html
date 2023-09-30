@@ -30,7 +30,21 @@
             console.log('Reith fonts did not load within 5 seconds.');
         }
     </script>
-<style>
+<style>	
+/* Adjust the logo size for smaller screens */
+@media screen and (max-width: 767px) {
+    .gel-layout__item.gel-2/5@l {
+        text-align: center; /* Center the logo */
+        padding-left: 0; /* Remove left padding */
+        margin-bottom: 20px; /* Add some margin for spacing */
+        margin-top: -70px; /* Adjust the margin */
+    }
+    
+    .gel-layout__item.gel-2/5@l img {
+        width: 100%; /* Make the logo fill the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
   .experience {
     display: flex;
     align-items: flex-start; /* Align items to the top */
